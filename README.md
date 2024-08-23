@@ -1,34 +1,26 @@
-# DIO - Trilha .NET - API e Entity Framework
-www.dio.me
+# DIO - Trilha .NET - API e Entity Framework: Gerenciador de Tarefas💻
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
+Este repositório contém a solução para o desafio de projeto da trilha .NET - API e Entity Framework da DIO, que consiste em desenvolver um sistema gerenciador de tarefas com CRUD completo.
 
-## Contexto
-Você precisa construir um sistema gerenciador de tarefas, onde você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina.
+## 📜Descrição do Projeto
 
-Essa lista de tarefas precisa ter um CRUD, ou seja, deverá permitir a você obter os registros, criar, salvar e deletar esses registros.
+O sistema gerenciador de tarefas permite aos usuários cadastrar, visualizar, editar e excluir suas tarefas, auxiliando na organização da rotina. As funcionalidades implementadas incluem:
 
-A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para implementar a solução que achar mais adequado.
+### CRUD completo: 
+Criação, leitura, atualização e exclusão de tarefas.
 
-A sua classe principal, a classe de tarefa, deve ser a seguinte:
+### Entity Framework: 
+Utilizado para a persistência dos dados em um banco de dados.
 
-![Diagrama da classe Tarefa](diagrama.png)
-
-Não se esqueça de gerar a sua migration para atualização no banco de dados.
-
-## Métodos esperados
-É esperado que você crie o seus métodos conforme a seguir:
-
-
-**Swagger**
-
+### Swagger: 
+Documentação interativa da API para facilitar o uso e teste dos endpoints.
 
 ![Métodos Swagger](swagger.png)
 
+### Endpoints específicos: 
+Métodos para buscar tarefas por ID, título, data, status e obter todas as tarefas.
 
 **Endpoints**
-
 
 | Verbo  | Endpoint                | Parâmetro | Body          |
 |--------|-------------------------|-----------|---------------|
@@ -41,7 +33,19 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 | GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
 | POST   | /Tarefa                 | N/A       | Schema Tarefa |
 
-Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
+
+
+## 📔Estrutura do Projeto
+O projeto está organizado da seguinte forma:
+
+### Data: 
+Contém a classe TarefaContext para interagir com o banco de dados.
+
+### Controllers: 
+Contém os controladores da API para gerenciar as tarefas.
+
+### Models:
+Contém a definição da classe Tarefa.
 
 ```json
 {
@@ -53,6 +57,5 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 }
 ```
 
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## 🔍Observações
+O código foi desenvolvido de acordo com as especificações do desafio.
